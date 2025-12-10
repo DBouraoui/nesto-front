@@ -1,0 +1,28 @@
+{
+  "herosection": {
+    "badge": {
+      "icon_alt": "Professional Solution",
+      "text": "Professional Solution"
+    },
+    "title": "Manage your real estate business with ease",
+    "subtitle": "The complete platform for real estate professionals. Centralize your listings, track your leads, and grow your business.",
+    "buttons": {
+      "start_free": "Start for Free",
+      "discover_demo": "Discover the Demo"
+    },
+    "stats": {
+      "properties": {
+        "value": "2500+",
+        "label": "Managed Listings"
+      },
+      "professionals": {
+        "value": "850+",
+        "label": "Professionals"
+      },
+      "productivity": {
+        "value": "+40%",
+        "label": "Productivity"
+      }
+    }
+  }
+}

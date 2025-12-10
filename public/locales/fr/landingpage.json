@@ -1,0 +1,28 @@
+{
+  "herosection": {
+    "badge": {
+      "icon_alt": "Solution professionnelle",
+      "text": "Solution professionnelle"
+    },
+    "title": "Gérez votre activité immobilière en toute simplicité",
+    "subtitle": "La plateforme complète pour les professionnels de l'immobilier. Centralisez vos biens, suivez vos prospects et développez votre activité.",
+    "buttons": {
+      "start_free": "Démarrer gratuitement",
+      "discover_demo": "Découvrir la démo"
+    },
+    "stats": {
+      "properties": {
+        "value": "2500+",
+        "label": "Biens gérés"
+      },
+      "professionals": {
+        "value": "850+",
+        "label": "Professionnels"
+      },
+      "productivity": {
+        "value": "+40%",
+        "label": "Productivité"
+      }
+    }
+  }
+}

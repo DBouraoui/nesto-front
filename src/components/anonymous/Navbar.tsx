@@ -12,8 +12,12 @@ import {
 import { Link } from "react-router";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import SidebarMobile from "@/components/anonymous/side-bar.tsx";
+import TraductionToggle from "@/components/ui/traduction-toggle.tsx";
+import {useTranslation} from "react-i18next";
 
 export default function Navbar() {
+    const {t} = useTranslation('navbar');
+
     return (
         <nav className="w-screen h-16 border-b border-border bg-background">
             <section className="container mx-auto h-full flex justify-between items-center px-4">
@@ -29,13 +33,16 @@ export default function Navbar() {
                 </div>
 
                 {/* 3. Actions (Droite) */}
-                <div className="flex justify-center items-center gap-2">
-                    <ThemeToggle />
+                <div className="flex justify-center items-center gap-4">
+                   <div className="flex flex-row items-center justify-center gap-2">
+                       <ThemeToggle />
+                       <TraductionToggle />
+                   </div>
                     <SidebarMobile />
 
                     <div className="hidden lg:flex gap-2">
-                        <Link to="/login"><Button variant="outline">Connexion</Button></Link>
-                        <Button>Inscription</Button>
+                        <Link to="/login"><Button variant="outline">{t('login')}</Button></Link>
+                        <Button>{t('register')}</Button>
                     </div>
                 </div>
 

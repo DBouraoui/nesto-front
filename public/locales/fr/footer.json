@@ -1,0 +1,35 @@
+{
+  "title": "Nesto Immo",
+  "subtitle": "Améliorer la qualité de travail des agents immobiliers au travers de solutions modernes et propulsées par l'intelligence artificielle.",
+  "copyright": "Nesto Immo. Tous droits réservés.",
+  "confidentiality": "Politique de Confidentialité",
+  "condition": "Conditions d'Utilisation",
+
+  "newsletter": {
+    "title": "Abonnez-vous à notre Newsletter",
+    "subtitle": "Recevez les dernières mises à jour directement dans votre boîte de réception."
+  },
+
+  "product": {
+    "title": "Produit",
+    "features": "Fonctionnalités",
+    "pricing": "Tarification",
+    "documentation": "Documentation",
+    "status": "Statut"
+  },
+
+  "enterprise": {
+    "title": "Entreprise",
+    "about": "À Propos",
+    "careers": "Carrières",
+    "blog": "Blog",
+    "press": "Presse"
+  },
+
+  "support": {
+    "title": "Support",
+    "help_faq": "Aide & FAQ",
+    "contact_us": "Nous Contacter",
+    "api": "API"
+  }
+}

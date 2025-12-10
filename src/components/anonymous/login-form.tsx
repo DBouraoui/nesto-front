@@ -30,7 +30,7 @@ export function LoginForm({
         setEmail(e.target.value);
     };
 
-    const handleSubmit = (e: { preventDefault: () => void; target: { password: { value: any; }; }; }) => {
+    const handleSubmit = (e: { preventDefault: () => void; target: { password: { value: never; }; }; }) => {
         e.preventDefault();
 
         console.log('Tentative de connexion avec:', { email, password: e.target.password.value });
@@ -47,7 +47,7 @@ export function LoginForm({
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={()=>handleSubmit}>
                         <FieldGroup>
 
                             {/* Champ Email */}
