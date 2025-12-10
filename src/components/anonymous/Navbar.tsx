@@ -8,6 +8,7 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import {Link} from "react-router";
+import {ThemeToggle} from "@/components/ui/theme-toggle.tsx";
 
 export default function Navbar() {
     return (
@@ -20,6 +21,7 @@ export default function Navbar() {
                     <MenuBar />
                 </div>
                 <div className="col-span-2 w-full h-full flex justify-center items-center gap-2">
+                    <ThemeToggle />
                     <Button>Connexion</Button>
                     <Button>Inscription</Button>
                 </div>

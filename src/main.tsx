@@ -6,6 +6,8 @@ import { RouterProvider } from "react-router/dom";
 import {Toaster} from "sonner";
 import AnonymousLayout from "@/layouts/AnonymousLayout.tsx";
 import LandingPage from "@/pages/LandingPage.tsx";
+import LoginPage from "@/pages/LoginPage.tsx";
+import {ThemeProvider} from "@/components/ui/theme-provider.tsx";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <LandingPage />
+            },
+            {
+                path: "/login",
+                element: <LoginPage />
             }
         ]
     },
@@ -22,7 +28,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <RouterProvider router={router} />
-      <Toaster />
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <RouterProvider router={router} />
+          <Toaster />
+      </ThemeProvider>
   </StrictMode>,
 )

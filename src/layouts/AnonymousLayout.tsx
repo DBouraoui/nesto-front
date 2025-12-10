@@ -1,5 +1,6 @@
 import {Outlet} from "react-router";
 import Navbar from "@/components/anonymous/Navbar.tsx";
+import Footer from "@/components/anonymous/Footer.tsx";
 
 export default function AnonymousLayout() {
     return (
@@ -8,11 +9,11 @@ export default function AnonymousLayout() {
                 <Navbar />
             </header>
 
-            <main>
+            <main className="min-h-svh">
                 <Outlet />
             </main>
 
-            <p>Footer</p>
+            <Footer />
         </>
     )
 }
