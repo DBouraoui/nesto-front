@@ -1,5 +1,3 @@
-// src/components/anonymous/login-form.jsx
-
 import React, { useState } from 'react';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -17,6 +15,8 @@ import {
     FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import {useLoginMutation} from "@/api/auth/mutation.ts";
+import {toast} from "sonner";
 
 export function LoginForm({
                               className,
@@ -25,6 +25,7 @@ export function LoginForm({
 
     const [email, setEmail] = useState('');
     const isEmailFilled = email.trim().length > 8;
+    const mutation = useLoginMutation()
 
     const handleEmailChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setEmail(e.target.value);
@@ -33,12 +34,22 @@ export function LoginForm({
     const handleSubmit = (e: { preventDefault: () => void; target: { password: { value: never; }; }; }) => {
         e.preventDefault();
 
-        console.log('Tentative de connexion avec:', { email, password: e.target.password.value });
+        mutation.mutate({
+            email: email,
+            password: e.target.password.value
+        },{
+          onSuccess: async () => {
+              toast.success("Login successfully");
+          },
+            onError: async (error) => {
+              toast.error(error.message);
+            }
+        }
+        )
     };
 
     return (
         <div className={cn("flex flex-col gap-6", className)} {...props}>
-            {/* Utilisation de classes neutres pour la compatibilité mode clair/sombre */}
             <Card className="dark:bg-background border-background">
                 <CardHeader>
                     <CardTitle className="text-gray-900 dark:text-gray-50">Connectez-vous à votre panel</CardTitle>
@@ -47,7 +58,7 @@ export function LoginForm({
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form onSubmit={()=>handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                         <FieldGroup>
 
                             {/* Champ Email */}
