@@ -1,12 +1,9 @@
-// src/components/HeroSection.jsx
-
 import { Building2, TrendingUp, Users, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { useTranslation } from 'react-i18next'; // Import de i18next
+import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
-    // Utilisation du namespace 'landingpage'
     const { t } = useTranslation('landingpage');
 
     return (

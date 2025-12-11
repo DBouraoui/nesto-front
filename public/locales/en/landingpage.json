@@ -24,5 +24,47 @@
         "label": "Productivity"
       }
     }
+  },
+  "painPoints": {
+    "title": "Do you recognize these situations?",
+    "subtitle": "You are not alone. These issues slow down hundreds of real estate professionals every day.",
+    "timeWaste": {
+      "title": "Wasting time between Excel, emails, and WhatsApp",
+      "description": "You juggle multiple inconsistent tools. Every piece of information is scattered and hard to find."
+    },
+    "noVision": {
+      "title": "No clear vision of your activity",
+      "description": "Impossible to know where you really stand. Numbers are scattered, reports are non-existent."
+    },
+    "prospectTracking": {
+      "title": "Unable to track prospects effectively",
+      "description": "Follow-ups are forgotten, opportunities slip away. You lose potential clients every week."
+    },
+    "errors": {
+      "title": "Oversights, double entries, errors",
+      "description": "Information is entered multiple times. Errors pile up and harm your professionalism."
+    },
+    "cta": "It's time to take back control of your business."
+  },
+  "solutions": {
+    "subtitle": "Optimize Your Performance",
+    "mainTitle": "Tools designed for the real estate reality.",
+    "intro": "Our application precisely addresses the daily challenges of real estate professionals: centralization, tracking, and automation.",
+    "block1": {
+      "title": "Centralize All Your Data",
+      "description": "No more dispersion! Gather mandates, contacts, exchange history, and documents in one place for a 360° view of every file. This is the essence of efficiency."
+    },
+    "block2": {
+      "title": "Track Your Leads in 2 Clicks",
+      "description": "A clear and intuitive sales pipeline. Move seamlessly from one stage to the next and ensure personalized follow-up for every lead, from initial contact to closing."
+    },
+    "block3": {
+      "title": "Generate Property Sheets Automatically",
+      "description": "Save valuable time. Our AI creates and formats property descriptions and complete property sheets from your raw information instantly."
+    },
+    "block4": {
+      "title": "Analyze Your Performance in Real-Time",
+      "description": "Dynamic dashboards to steer your business. Identify your growth levers, optimize your strategies, and make decisions based on reliable data."
+    }
   }
 }

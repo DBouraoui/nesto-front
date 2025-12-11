@@ -24,5 +24,47 @@
         "label": "Productivité"
       }
     }
+  },
+  "painPoints": {
+    "title": "Vous reconnaissez ces situations ?",
+    "subtitle": "Vous n'êtes pas seul. Ces problèmes freinent des centaines de professionnels de l'immobilier chaque jour.",
+    "timeWaste": {
+      "title": "Perte de temps entre Excel, mails et WhatsApp",
+      "description": "Vous jonglez entre plusieurs outils sans cohérence. Chaque information est dispersée, difficile à retrouver."
+    },
+    "noVision": {
+      "title": "Aucune vision claire sur l'activité",
+      "description": "Impossible de savoir où vous en êtes réellement. Les chiffres sont éparpillés, les rapports inexistants."
+    },
+    "prospectTracking": {
+      "title": "Impossible de suivre les prospects efficacement",
+      "description": "Les relances sont oubliées, les opportunités passent à côté. Vous perdez des clients potentiels chaque semaine."
+    },
+    "errors": {
+      "title": "Oublis, double saisie, erreurs",
+      "description": "Les informations sont ressaisies plusieurs fois. Les erreurs s'accumulent et nuisent à votre professionnalisme."
+    },
+    "cta": "Il est temps de reprendre le contrôle de votre activité."
+  },
+  "solutions": {
+    "subtitle": "Optimisez Votre Performance",
+    "mainTitle": "Des outils conçus pour la réalité immobilière.",
+    "intro": "Notre application répond avec précision aux défis quotidiens des professionnels de l'immobilier : centralisation, suivi et automatisation.",
+    "block1": {
+      "title": "Centralisez toutes vos données",
+      "description": "Fini la dispersion ! Regroupez mandats, contacts, historique d'échanges et documents au même endroit pour une vue 360° de chaque dossier. C'est l'essence de l'efficacité."
+    },
+    "block2": {
+      "title": "Suivez vos prospects en 2 clics",
+      "description": "Un pipeline de vente clair et intuitif. Passez d'une étape à l'autre sans friction et assurez un suivi personnalisé de chaque lead, de la prise de contact à la signature."
+    },
+    "block3": {
+      "title": "Générez vos fiches biens automatiquement",
+      "description": "Gagnez un temps précieux. Notre IA crée et met en forme des descriptions de biens et des fiches complètes à partir de vos informations brutes en un instant."
+    },
+    "block4": {
+      "title": "Analysez vos performances en temps réel",
+      "description": "Des tableaux de bord dynamiques pour piloter votre activité. Identifiez vos leviers de croissance, optimisez vos stratégies et prenez des décisions basées sur des données fiables."
+    }
   }
 }
